@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>משו"ב</title>
+    <link rel="stylesheet" href="home_page_decorate.css">
+</head>
+<body class="full_backgroud">
+
+<style>
+body {        
+background-image: url('entry_page_image.png');
+background-size: 6cm;
+background-position: top;
+background-position-y: 2%;
+background-repeat: no-repeat;
+background-color: white;
+}
+
+.center{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 25px;
+
+}
+
+.left{
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 4%;
+}
+
+.cool_button{
+    border-radius: 6ch;
+    font-size: 30px;
+}
+
+
+</style>
+
+
+<div class="center">
+    <label for="username">Username:</label>
+    <input type="text" id="username"/>
+    <br>
+    <br>
+    <br>
+    <label class="left" for="pass">Password (5 characters):</label>
+    <input type="password" id="pass" name="password" minlength="5" maxlength="5" required />
+    <br>
+    <br>
+    <br>
+    <label class="left">subject:(enter 0 if you are a student)</label>
+    <input type="text"/>
+    <br>
+    <br>
+    <button class="cool_button" onclick="move()">enter</button>
+</div>
+
+
+<script type="text/javascript" src="/eel.js"></script>
+<script type="text/javascript" src="./main.js"></script></body>
+</html>

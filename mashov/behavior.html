@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="home_page_decorate.css">
+<body class="full_backgroud">
+
+    <p class="title_name">משו"ב</p>
+    <div>
+        <h1 class="lack_of_function">העדר תפקוד</h1>
+        <h2 class="good_job">חיזוק חיובי</h2>
+        <h3 class="eq">ציוד</h3>
+        <h4 class="home_work_counter">שיערוי בית</h4>
+        <h5 class="bad">הפרעות</h5>
+        <h6 class="late">איחורים</h6>
+        <p class="miss">חיסורים</p>     
+    </div>
+    <p class="harm_grade">הורדה בציון &#x21E8;</p>
+
+
+    <button onclick="myFunction()" class="hamburger_icon_location">
+        <div class="hamburger_icon"></div>
+        <div class="hamburger_icon"></div>
+        <div class="hamburger_icon"></div>
+    </button>
+
+    <div id="myDIV">
+        <button class="myDIV_info">לוח מידע</button>
+        <button class="myDIV_male" id="main-button" onclick="toggleAdditionalButtons()">דואר ומסרונים</button>
+        <div id="container">
+            <div id="additional-buttons">
+                <button class="additional-button" onclick="new_massege()">לשלוח הודעה</button>
+                <button class="additional-button" onclick="enter_masseges()">הודעות חדשות</button>
+            </div>
+
+    </div>
+        <button class="myDIV_grades">ציונים שוטפים</button>
+        <button class="myDIV_behavior" onclick="behavior()">התנהגות בשיעור</button>
+        <button class="myDIV_counter">מונה אירועים</button>
+        <button class="myDIV_home_work">שיעורי בית</button>
+        <button class="myDIV_hours_system">מערכת שעות</button>
+        <button class="myDIV_tests">לוח מבחנים</button>
+        <button class="myDIV_zoom">כיתה מקוונת</button>
+        <button class="myDIV_back" onclick="back_to_home_page()">בחזרה לדף הבית</button>
+        <button onclick="back()" class="myDIV_log_out">התנתק</button>
+    </div>
+    <script type="text/javascript" src="./main.js"></script></body>
+</html>

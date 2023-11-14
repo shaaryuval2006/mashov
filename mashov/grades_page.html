@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home_page_decorate.css">
+    <title>Document</title>
+</head>
+
+<body class="full_backgroud">
+    <div class="background">
+        <label for="id">Student ID</label>
+        <input type="text" id="id" class="large-input">
+        <br>
+        <br>
+        <label for="grades">Type of Test</label>
+        <select name="type_of_grade" id="grades" class="large-input">
+            <option value="mivhan">מבחן</option>
+            <option value="bohan">בוחן</option>
+            <option value="avoda">עבודה</option>
+        </select>
+        <br>
+        <br>
+        <label for="grade">Enter Grade:</label>
+        <input type="number" id="grade" class="large-input" min="1" max="100">
+    </div>
+
+    <p class="title_name">משו"ב</p>
+    <button onclick="myFunction()" class="hamburger_icon_location">
+        <div class="hamburger_icon"></div>
+        <div class="hamburger_icon"></div>
+        <div class="hamburger_icon"></div>
+    </button>
+
+    <div id="myDIV">
+        <button class="myDIV_info">לוח מידע</button>
+        <button class="myDIV_male" id="main-button" onclick="toggleAdditionalButtons()">דואר ומסרונים</button>
+        <div id="container">
+            <div id="additional-buttons">
+                <button class="additional-button" onclick="new_massege()">לשלוח הודעה</button>
+                <button class="additional-button" onclick="enter_masseges()">הודעות חדשות</button>
+            </div>
+
+    </div>
+        <button class="myDIV_grades">ציונים שוטפים</button>
+        <button class="myDIV_behavior" onclick="behavior()">התנהגות בשיעור</button>
+        <button class="myDIV_counter">מונה אירועים</button>
+        <button class="myDIV_home_work">שיעורי בית</button>
+        <button class="myDIV_hours_system">מערכת שעות</button>
+        <button class="myDIV_tests">לוח מבחנים</button>
+        <button class="myDIV_zoom">כיתה מקוונת</button>
+        <button class="myDIV_back" onclick="back_to_home_page()">בחזרה לדף הבית</button>
+        <button onclick="back()" class="myDIV_log_out">התנתק</button>
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./add_grades.js"></script>
+</body>
+</html>
