@@ -4,7 +4,7 @@ import time
 import pyaudio
 
 # Server
-HOST = '127.0.0.1'
+HOST = '109.186.154.12'
 PORT = 16400
 SERVER_ADDR = (HOST, PORT)
 # הגדרות זמן וקצב דומציה
@@ -17,7 +17,8 @@ BUFFER_SIZE = CHUNK * 2
 
 def main():
     # יצירת חיבור רשת
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    client_socket = socket.socket()
+    client_socket.connect(SERVER_ADDR)
 
     # יצירת אובייקט PyAudio
     p = pyaudio.PyAudio()
@@ -32,9 +33,9 @@ def main():
     client_socket.settimeout(0.1)
     while True:
         data = stream.read(CHUNK)
-        client_socket.sendto(data, SERVER_ADDR)
+        client_socket.send(data)
         try:
-            data, address = client_socket.recvfrom(BUFFER_SIZE)
+            data = client_socket.recv(BUFFER_SIZE)
             stream.write(data)
         except TimeoutError:
             pass
